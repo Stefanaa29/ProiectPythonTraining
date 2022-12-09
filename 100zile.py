@@ -179,7 +179,7 @@
 #     inaltime_studenti.append(a)
     
 
-test
+
 # for i in range(0,n):
 #     a = int(input())
 #     inaltime_studenti.append(a)
