@@ -1,0 +1,38 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ']
+direction = input("Scrie 'encode' ca sa criptezi, scrie 'decode' ca sa decriptezi:\n")
+def criptare(text, shift):
+    text_nou = ""
+    for i in text:
+        pozitie = alphabet.index(i) + shift
+        if pozitie >= 26:
+            pozitie = pozitie - 27
+        text_nou += alphabet[pozitie % 27]
+    print(f"Textul criptat este: {text_nou}")
+
+def decriptare(txt, pas):
+    text_nou = ""
+    for i in txt:
+        pozitie = alphabet.index(i) - pas
+        if pozitie <= 0:
+            pozitie = pozitie + 27
+        text_nou += alphabet[pozitie % 27]
+    print(f"Textul criptat este: {text_nou}")
+
+if direction == "encode":
+    text = input("Scrie mesajul:\n").lower()
+    shift = int(input("Scrie numarul pentru shift:\n"))
+    criptare(text, shift)
+elif direction == "decode":
+    text = input("Scrie mesajul:\n").lower()
+    shift = int(input("Scrie numarul pentru shift:\n"))
+    decriptare(text, shift)
+else:
+    print("Ai introdus un text gresit!") 
+    
+
+
+  
+
+
+
+     
