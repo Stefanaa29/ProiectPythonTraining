@@ -187,23 +187,6 @@
 # print(inaltime_studenti)
 
 
-# Ex:
-# scoruri = []
-# min = 100
-# n = int(input("Introduceti numarul de elemente din lista: "))
-# for i in range(0, n):
-#     a = int(input())
-#     scoruri.append(a)
-# print(scoruri)    
-# for i in scoruri:
-#     if i < min:
-#         min = i   
-# print(min)    
-
-# suma = 0
-# for i in range(2,100+1,2):
-#     suma += i
-# print(f"Suma numerelor pare este:{suma}")   
 
 
 # FizzBuzz
